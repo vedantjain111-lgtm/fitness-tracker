@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🏋️ Fitness Tracker</h1>
+
+<div class="container">
+    <input type="date" id="date">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <input type="number" id="calories" placeholder="Calories">
+    <input type="text" id="workout" placeholder="Workout">
+    
+    <button onclick="addEntry()">Add Entry</button>
+</div>
+
+<h2>Progress</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Weight</th>
+            <th>Calories</th>
+            <th>Workout</th>
+        </tr>
+    </thead>
+    <tbody id="data"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
